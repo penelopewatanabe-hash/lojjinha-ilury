@@ -1,0 +1,150 @@
+html, body{  
+margin: 0;
+padding:0;
+width: 100vw;
+height: 96.7vh;
+background-color: rgb(248, 231, 210);
+}
+header{
+    border: 3px;
+    border-style: solid;
+    border-color:  rgb(248, 231, 210);
+    width: 100%;
+    height:100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;    
+    background-color: rgb(116, 66, 4);    
+}
+.cabecalho{
+    width: 70%;
+    height: 80px;
+    border: 1px;
+    border-style: solid;
+    border-color:  rgb(248, 231, 210);;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 451px;
+    background-color: rgb(248, 231, 210);
+}
+main{
+    border: 1px;
+    border-style: solid;
+    width: 100%;
+    height:719px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(116, 66, 4);
+}
+footer{
+    border: 3px;
+    border-style: solid;
+    border-color:  rgb(248, 231, 210);;
+    width: 100%;
+    height:     100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(116, 66, 4);
+
+}
+.principal{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 80%;
+    height: 97.5%;
+    border: 1px;
+    border-style: solid;
+     background-color: rgb(248, 231, 210);
+}
+img{
+    width: 5rem;
+    height: 5rem;
+    background-size: cover;
+    box-shadow: black 5px 0.3px 10px 2px;
+    /* border-radius: 50%;   */
+}
+.artCentralizado{
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.distribuida{  
+    display:flex;    
+    justify-content: space-evenly;
+
+}
+.secaoAlinhamento{
+    width: 100%;
+    height: 70%;
+    display:flex;    
+    flex-direction: column;   
+    justify-items:center;
+    justify-content: space-evenly;
+}
+.artPocao{   
+    display:flex;
+    justify-content: center;
+    align-items: center;    
+    border:2px solid;
+    width: 6rem;
+    height: 6rem;
+    transition: background 0.3s ease ,transform 0.3s ease;
+    background-color: white;
+}
+
+.artPocao:hover{
+    background: rgb(235, 234, 234);
+    animation: growAndRotate 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes growAndRotate {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  100% {
+    transform: scale(1.08) rotate(3deg);
+  }
+}
+
+.artBotao{   
+    display:flex;
+    justify-content:right;
+    padding-right: 4rem;
+    align-items:center;    
+    width: 100%;
+    height: 6rem;
+    transition: background 0.3s ease ,transform 0.3s ease;
+    background-color:transparent;
+}    
+
+.btnCompra{
+    background-color: rgb(116,66,4);
+    color: rgb(248, 231, 210);
+    border: none;
+    border-radius: 4px;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition:background-color 0.2s ease, transform 0.1s ease;
+}
+/* Interação do Botão */
+.btnCompra:hover {
+    background-color: rgb(148, 86, 10); /* Brilho de energia ao passar o mouse */
+}
+
+.btnCompra:active {
+    transform: scale(0.95);             /* Efeito físico de clique (encolhe levemente) */
+}
+
+@keyframes growAndRotate {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  100% {
+    transform: scale(1.08) rotate(3deg);
+  }
+}
